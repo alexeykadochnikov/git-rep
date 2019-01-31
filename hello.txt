@@ -1,0 +1,4 @@
+print("hello world")
+print("hello people")
+pint ("hello")
+print ("hello my dear friend")
