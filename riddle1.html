@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	
+
+	var riddles=[
+		["Зимой и летом одним цветом.","Ёлка","ёлка"],
+		["Сидит дед.", "Лук","лук"],
+		["загадка сфинкса","Человек","человек"],
+	];
+
+	function getrid(ridles,length){
+		while(riddles.length !=0){
+			var i=parseInt(Math.random()*riddles.length);
+			var ans=prompt(riddles[i][0]);
+			if(ans==riddles[i][1]){
+				alert("Правильно!");
+				splice(i,0);
+			}
+			else{
+				alert("Неправильно.");
+			}
+		}
+	}
+	
+
+	getrid(riddles);
+
+
+
+</script>
