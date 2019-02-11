@@ -17,7 +17,7 @@
 		while(riddles.length !=0){
 			var i=parseInt(Math.random()*riddles.length);
 			var ans=prompt(riddles[i][0]);
-			if(ans==riddles.length[i]){
+			if(ans==riddles[i][1]){
 				alert("Правильно.");
 				riddles.splice(i);
 			}
