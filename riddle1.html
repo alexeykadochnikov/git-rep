@@ -1,31 +1,31 @@
 <meta charset="utf-8">
 <script type="text/javascript">
 
-	
 
+	function getrid(letters,length){		
+		var i=parseInt(Math.random()*riddles.length)
+		return i;
+	}
+	
 	var riddles=[
-		["Зимой и летом одним цветом.","Ёлка","ёлка"],
+		["Зимой и летом одним цветом.","Ёлка","ель","ёлочка"],
 		["Сидит дед.", "Лук","лук"],
 		["загадка сфинкса","Человек","человек"],
 	];
 
-	function getrid(ridles,length){
+	function game(letters,length){
 		while(riddles.length !=0){
 			var i=parseInt(Math.random()*riddles.length);
 			var ans=prompt(riddles[i][0]);
-			if(ans==riddles[i][1]){
-				alert("Правильно!");
-				splice(i,0);
+			if(ans==riddles.length[i]){
+				alert("Правильно.");
+				riddles.splice(i);
 			}
 			else{
-				alert("Неправильно.");
+				alert("Ошибка");
 			}
 		}
 	}
-	
-
-	getrid(riddles);
-
-
+	game();
 
 </script>
